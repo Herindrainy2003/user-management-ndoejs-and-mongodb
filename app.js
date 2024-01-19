@@ -18,7 +18,7 @@ app.use(express.json());
 
 //connection a mongodb
 mongoose
-  .connect('mongodb+srv://all:mongomongo@sera.50wxxcf.mongodb.net/?retryWrites=true&w=majority')
+  .connect('mongodb+srv://username:motdepasse@sera.50wxxcf.mongodb.net/?retryWrites=true&w=majority')
   .then(() => {
     console.log("connected to MongoDB Atlas");
   })
