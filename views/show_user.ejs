@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Utilisateurs</title>
+</head>
+<body>
+  <ul>
+    <% user.forEach(function(users){ %>
+      <li>
+        <h2>Nom : <%= users.nom %></h2>
+        <p>email : <%= users.email %> <p>
+        <p>Contact : <%= users.numero %> </p>
+      </li>
+      <a href="/delete/<%= users._id %>">Suprimmer</a>
+      <a href="/edit/<%= users._id %>">Edit</a>
+   
+      <% }) %>
+  </ul>
+</body>
+</html>
